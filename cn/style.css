@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Numbering Buttons and give all of them default Value Before Working */
+div.grid div.field h1 {
+    display: inline;
+    position: absolute;
+    padding: 2px 20px 10px 6px;
+    align-self: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    border-bottom: 1px solid rgb(124, 112, 0);
+    left: 0;
+    background-color: #0586b1;
+    border-bottom-right-radius:100% ;
+}
+div.grid div.field button {
+    background-color: unset;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-size: 15px;
+    width: 155px;
+    border: unset;
+    border-radius: unset;
+    cursor: pointer;
+    transform: translateY(9px);
+}
+div.grid div.field button:focus {
+    outline: none;
+}
+
+/* -------------------------------  Buttons Code  -------------------------------*/
+
+
+
+/* 15. (Button Fifteen) */
+div.grid div.field .but15 {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+div.grid div.field .but15 span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 0px;
+    left: -100%;
+    background-color: gold;
+    animation: sp1 3s linear alternate-reverse infinite;
+}
+@keyframes sp1 {
+    from {left: -100%;}
+    to {left: 100%;}
+}
+div.grid div.field .but15 span:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0px;
+    right: -100%;
+    background-color: gold;
+    animation: sp2 3s linear alternate-reverse infinite;
+}
+@keyframes sp2 {
+    from {right: -100%;}
+    to {right: 100%;}
+}
+div.grid div.field .but15 span:nth-child(3) {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: -40px;
+    left: 0px;
+    background: gold;
+    animation: sp3 3s linear alternate-reverse infinite;
+}
+@keyframes sp3 {
+    from {top: -100%;}
+    to {top: 100%;}
+}
+div.grid div.field .but15 span:nth-child(4) {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    bottom: -40px;
+    right: 0px;
+    background-color: gold;
+    animation: sp4 3s linear alternate-reverse infinite;
+}
+@keyframes sp4 {
+    from {bottom: -100%;}
+    to {bottom: 100%;}
+}
+div.grid div.field .but15:hover {
+    letter-spacing: 5px;
+    background-color: gold;
+    color: black;
+    box-shadow: 0px 0px 100px 3px gold;
+}
+/* ------------------- */
+

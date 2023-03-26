@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="cn" >
+<head>
+  <meta charset="UTF-8">
+  <title>密码验证</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="shortcut icon" href="../assets/images/favicon.png">
+<link rel="stylesheet" href="./style1.css">
+
+</head>
+
+
+
+
+
+
+
+<!-- 禁用 -->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    document.onkeydown = function () {
+        var e = window.event || arguments[0];
+        if (e.keyCode == 123) {
+            
+            
+            return false;
+        } else if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+           
+            return false;
+        } else if ((e.ctrlKey) && (e.keyCode == 85)) {
+           
+            return false;
+        } else if ((e.ctrlKey) && (e.keyCode == 83)) {
+    
+            return false;
+        }
+    }
+    document.oncontextmenu = function () {
+ 
+        return false;
+    }
+    
+</script>
+
+	
+
+
+
+<!-- 点击 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 点击后出现烟花效果 -->
+  <script src="https://blog-static.cnblogs.com/files/axqa/cursor-effects.js"></script>
+
+</body>
+
+
+<!-- 点击 -->
+
+
+
+
+
+
+
+<body>
+<!-- partial:index.partial.html -->
+<form onsubmit="return false;">
+  <label for="password">Password</label>
+  <input id="password" type="password" pattern="flag" placeholder="请输入密码" required="required" title="请前往公众号获取最新密码！"/>
+  <input id="login" type="checkbox"/>
+  <label class="login-button" for="login" onclick="window.location.href='../cn/藏宝阁.html'" type="button" id="add">
+    <span>密码正确，点击进入</span>
+    <svg>
+      <path d="M10,17V14H3V10H10V7L15,12L10,17M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V16H7V20H17V4H7V8H5V4A2,2 0 0,1 7,2Z"></path>
+    </svg>
+  </label>
+  <div class="padlock">
+    <div class="padlock__hook">
+      <div class="padlock__hook-body"></div>
+      <div class="padlock__hook-body"></div>
+    </div>
+    <div class="padlock__body">
+      <div class="padlock__face">
+        <div class="padlock__eye padlock__eye--left"></div>
+        <div class="padlock__eye padlock__eye--right"></div>
+        <div class="padlock__mouth padlock__mouth--one"></div>
+        <div class="padlock__mouth padlock__mouth--two"></div>
+        <div class="padlock__mouth padlock__mouth--three"></div>
+      </div>
+    </div>
+  </div>
+ 
+  <span class="logout-button"  onclick="window.location.href='https://www.z4a.net/images/2022/12/01/9ce345c034ab595709846535a27e35ff.gif'" >
+    请关注微信公众号：AZ菌
+    <br/>
+    并在公众号对话框回复：密码
+    <br/>
+    即可获取，密码不定时更新！
+</span>
+
+  
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+
+
+
+  
+</body>
+</html>
